@@ -155,7 +155,7 @@ def get_usart_data():
 	print (a, b)
 	data = rec[a:b]
 	if a == -1 or b == -1:
-		data = rec[0:1440]
+		data = rec[0:179]
 
 	
 	print data
