@@ -153,8 +153,11 @@ def get_usart_data():
 	a = rec.find('\n')
 	b = rec.find('\n', a+1)
 	print (a, b)
-
 	data = rec[a:b]
+	if (a && b) == 0:
+		data = rec[0:1440]
+
+	
 	print data
 	print len(data)
 
