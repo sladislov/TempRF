@@ -154,7 +154,7 @@ def get_usart_data():
 	b = rec.find('\n', a+1)
 	print (a, b)
 	data = rec[a:b]
-	if (a && b) == 0:
+	if a == -1 or b == -1:
 		data = rec[0:1440]
 
 	
